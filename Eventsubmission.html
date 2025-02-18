@@ -1,0 +1,64 @@
+<!DOCTYPE html> <htmL>
+<header>
+<head>
+<link rel="stylesheet" href="style.css"> <h1> Event registration form:</h1> </head>
+</header>
+<body>
+<p> <cite > This is a event registration form for Amercian University of Sharjah </cite></p> <p> <small>Event Registration Form </small></p>
+<form action="index.html" method="post">
+<fieldset>
+<br>
+<legend>Please fill up this form</legend>
+<legend> Is this event open to all students? </legend></p>
+6
+<label>
+<input type="radio" name="openToAll" value="yes" required> Yes
+</label><br>
+<label>
+<input type="radio" name="openToAll" value="no" required> No
+</label>
+<legend>What type of event is this?</legend>
+<br>
+<label>
+<input type="checkbox" name="eventType" value="workshop"> Workshop
+</label>
+<label>
+<input type="checkbox" name="eventType" value="social"> Social
+</label>
+<label>
+<input type="checkbox" name="eventType" value="sports"> Sports
+</label>
+<label>
+<input type="checkbox" name="eventType" value="academic"> Academic
+</label>
+<label>
+<input type="checkbox" name="eventType" value="other"> Other
+</label>
+<br>
+<br>
+<label for="department">Select the department hosting the event:</label>
+<select id="department" name="department" required>
+<option value="">--Please choose an option--</option>
+<option value="CEN">CEN</option>
+<option value="SBA">SBA</option>
+<option value="CAS">CAS</option>
+<option value="CAAD">CAAD</option>
+<option value="OSA">OSA</option>
+<option value="Other">Other</option>
+</select>
+<br><br>
+<label for="eventName">* Event Name:</label>
+<input type="text" id="eventName" name="eventName" required>
+<br><br>
+<label for="eventDate">* Event Date:</label>
+<input type="datetime-local" id="datetime21" name="datetime21" required>
+<br><br>
+<button type="submit" onclick="alert('You have successfully submitted!')">Submit</button>
+7
+
+<button type="reset">Reset</button> </fieldset>
+</form>
+</body>
+<footer>
+<button onclick="window.location.href='index.html';">Go back</button> </footer>
+</htmL>
